@@ -1,16 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-by-capital-page',
   templateUrl: './by-capital-page.component.html',
-  styles: [
-  ]
+  styles: [],
 })
-export class ByCapitalPageComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+export class ByCapitalPageComponent {
+  searchByCapital(term: string): void {
+    console.log({ term });
   }
-
 }
